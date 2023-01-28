@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'resources/theme_app.dart';
 import 'ui/pages/login_in.dart';
-import 'ui/theme_app.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Coffer Time',
-      themeMode: ThemeMode.dark,
-      theme: ThemeApp.light,
-      darkTheme: ThemeApp.dark,
-      home: const LoginIn()
-    );
+    debugShowCheckedModeBanner: false,
+    title: 'Coffer Time',
+    themeMode: ThemeMode.dark,
+    theme: ThemeApp.light,
+    darkTheme: ThemeApp.dark,
+    home: const LoginIn()
+      );
   }
 }
 
