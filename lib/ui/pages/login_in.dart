@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login_in/resources/strings.dart';
 import 'package:login_in/ui/components/coffer_button.dart';
 import 'package:login_in/ui/components/coffer_text_form_fild.dart';
+import 'package:login_in/ui/pages/login_register.dart';
 
 class LoginIn extends StatelessWidget {
   const LoginIn({Key? key}) : super(key: key);
@@ -60,7 +61,13 @@ class LoginIn extends StatelessWidget {
                           fontSize: 16, color: theme.colorScheme.primary),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LoginRegister()),
+                        );
+                      },
                       child: Text(
                         Strings.createAccount,
                         style: TextStyle(
